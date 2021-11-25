@@ -124,11 +124,7 @@ function App() {
                   alt="sunny"
                 />
                 <DescInfo
-                  info={
-                    weather?.weather[0]?.description === "clear sky"
-                      ? "sunny"
-                      : "cloudy"
-                  }
+                  
                 >
                   {weather?.weather[0]?.description === "clear sky"
                     ? "sunny"

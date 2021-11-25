@@ -8,15 +8,12 @@ export const counterSlice = createSlice({
     location: 'Tashkent'
   },
   reducers: {
-    setQuery: state => {
-      state.value += 1
+    search: state => {
+      if(state.key==='Enter'){
+          setLocation(query)
+      }
     },
-    decrement: state => {
-      state.value -= 1
-    },
-    incrementByAmount: (state, action) => {
-      state.value += action.payload
-    }
+    
   }
 })
 
